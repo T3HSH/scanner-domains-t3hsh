@@ -1,14 +1,14 @@
 # 🛡️ Cloudflare IP & Domain Scanner
 
-**A powerful Cloudflare IP & Domain Scanner built for penetration testing, reconnaissance, and Cloudflare Worker configurations.**
+**A powerful scanner for Cloudflare-protected domains and IP addresses, designed for reconnaissance, analysis, and Cloudflare Worker environments.**
 
 ---
 
-## 🚀 Overview
+# 🚀 Overview
 
-**Cloudflare IP & Domain Scanner** is a lightweight yet powerful reconnaissance tool designed for scanning **Cloudflare-protected domains and IP addresses**.
+**Cloudflare IP & Domain Scanner** is a lightweight yet powerful reconnaissance tool built specifically for scanning **Cloudflare-protected domains and IP addresses**.
 
-Unlike traditional scanners, this project focuses specifically on Cloudflare environments, providing detailed information about:
+Unlike traditional scanners, this project focuses on Cloudflare environments and provides detailed information including:
 
 * Open ports
 * Running services
@@ -18,9 +18,9 @@ Unlike traditional scanners, this project focuses specifically on Cloudflare env
 * Security information
 * Network details
 
-It is fully compatible with **Cloudflare Worker configurations** and delivers clean, structured reports for security analysis.
+The scanner is fully compatible with **Cloudflare Worker configurations** and generates clean, structured reports for security analysis.
 
-> ⚡ Simply provide a target domain or IP address and let the scanner do the rest.
+> ⚡ Simply provide a target domain or IP address, and the scanner will handle the rest.
 
 ---
 
@@ -32,25 +32,15 @@ It is fully compatible with **Cloudflare Worker configurations** and delivers cl
 * 🔒 SSL / TLS Validation
 * 🛡️ Security Information
 * 📍 ASN & Geo Location Lookup
-* 📊 Clean JSON Reports
+* 📊 Clean & Structured Reports
 * ⚙️ Full Cloudflare Worker Support
 * 🎯 Smart Target Detection
 
 ---
 
-# 📦 Installation
-
-```bash
-git clone https://github.com/T3HSH/cloudflare-scanner.git
-
-cd cloudflare-scanner
-
-pip install -r requirements.txt
-```
-
----
-
 # 🚀 Usage
+
+### Basic Scan
 
 ```bash
 python scanner.py -t example.com
@@ -78,13 +68,13 @@ python scanner.py -t worker.example.com --worker
 
 # ⚙️ Command Line Arguments
 
-| Parameter        | Description                               |
-| ---------------- | ----------------------------------------- |
-| `-t`, `--target` | Target domain or IP address               |
-| `-p`, `--ports`  | Port range (Example: `1-1000`)            |
-| `-f`, `--full`   | Full scan with additional security checks |
-| `-o`, `--output` | Save output to a file                     |
-| `-w`, `--worker` | Cloudflare Worker scanning mode           |
+| Parameter        | Description                                         |
+| ---------------- | --------------------------------------------------- |
+| `-t`, `--target` | Target domain or IP address                         |
+| `-p`, `--ports`  | Port range (e.g. `1-1000`)                          |
+| `-f`, `--full`   | Perform a full scan with additional security checks |
+| `-o`, `--output` | Save the report to a file                           |
+| `-w`, `--worker` | Enable Cloudflare Worker scanning mode              |
 
 ---
 
@@ -112,20 +102,22 @@ Location      : Europe 🇩🇪 Germany
 
 # 🎯 Designed For
 
-* Cloudflare Domains
-* Cloudflare Protected Servers
+* Cloudflare-Protected Domains
+* Cloudflare-Protected Servers
 * Cloudflare Workers
 * Security Reconnaissance
 * Network Analysis
-* Penetration Testing
+* Authorized Penetration Testing
 
 ---
 
 # ⚠️ Disclaimer
 
-This project is intended **only for authorized security testing and educational purposes**.
+This project is intended **for educational purposes and authorized security testing only**.
 
-Only scan systems and domains that you own or have explicit permission to assess. The author is **not responsible for any misuse** of this software.
+Only scan systems and domains that you own or have explicit permission to assess.
+
+The author is **not responsible for any misuse or illegal use** of this software.
 
 ---
 
