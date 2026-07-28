@@ -26,4 +26,32 @@ Cloudflare IP & Domain Scanner یک ابزار سبک و تخصصی است که 
 git clone https://github.com/T3HSH/cloudflare-scanner.git
 cd cloudflare-scanner
 pip install -r requirements.txt
-🚀 نحوه استفاده
+پارامترهای کاربردی:
+پارامتر	توضیح
+-t / --target	دامنه یا آی‌پی هدف
+-p / --ports	محدوده پورت (مثلاً 1-1000)
+-f / --full	اسکن کامل + بررسی آسیب‌پذیری
+-o / --output	ذخیره گزارش در فایل
+-w / --worker	حالت مخصوص کانفیگ‌های ورکر
+
+🎯 TARGET LOCKED
+────────────────────────────
+Domain        : example.com
+IP Address    : 185.199.108.153
+Cloudflare    : YES ☁️
+Status        : LIVE
+Open Ports    : 80, 443, 22, 53
+SSL / TLS     : Valid
+Server        : cloudflare
+ASN           : AS13335 Cloudflare, Inc.
+Location      : Europe 🇩🇪 Germany
+────────────────────────────
+✅ گزارش کامل ذخیره شد → report.json
+
+📌 نکات مهم
+•	این ابزار مخصوص دامنه‌ها و آی‌پی‌های پشت Cloudflare بهینه شده است.
+•	حالت --worker برای تست و استخراج اطلاعات مرتبط با کانفیگ‌های ورکر طراحی شده.
+•	از اسکن دامنه‌ها و سرورهایی که مالک آن‌ها نیستید خودداری کنید.
+📜 مجوز تحت مجوز MIT — به فایل LICENSE مراجعه کنید.
+ساخته‌شده با ❤️ توسط T3HSH
+
