@@ -22,7 +22,7 @@ Cloudflare IP & Domain Scanner یک ابزار سبک و تخصصی است که 
 💡 برای استفاده‌ی روزمره، کافی است دامنه یا آی‌پی را بدهی تا اسکنر بقیه‌ی کار را انجام دهد.
 
 📦 نصب
-```bash
+bash
 git clone https://github.com/T3HSH/cloudflare-scanner.git
 cd cloudflare-scanner
 pip install -r requirements.txt
