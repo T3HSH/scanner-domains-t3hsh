@@ -1,38 +1,99 @@
-🛡️ Cloudflare IP & Domain Scanner
-اسکنرِ قدرتمندِ آی‌پی و دامنه — مخصوصِ کلودفلر و تمام کانفیگ‌های ورکر
+# 🛡️ Cloudflare IP & Domain Scanner
 
-🌐 این اسکنر چیست؟
-Cloudflare IP & Domain Scanner یک ابزار سبک و تخصصی است که برای تارگت‌گیری دقیق روی دامنه‌ها و آی‌پی‌های پشت Cloudflare طراحی شده.  
-این اسکنر فقط اطلاعات سطحی نمی‌دهد؛ پورت‌ها، سرویس‌ها، وضعیت DNS، امنیت و آسیب‌پذیری‌ها را یک‌جا و تمیز استخراج می‌کند و با **تمام کانفیگ‌های Worker** بدون مشکل کار می‌کند.
+**A powerful Cloudflare IP & Domain Scanner built for penetration testing, reconnaissance, and Cloudflare Worker configurations.**
 
-به‌جای اسکن‌های عمومی و ناقص، این ابزار روی هدف‌های واقعی Cloudflare تمرکز دارد و نتیجه‌ای می‌دهد که واقعاً قابل استفاده باشد.
+---
 
-✨ قابلیت‌های اصلی
-اسکنر به تو اجازه می‌دهد همه‌چیز را یک‌جا ببینی:
+## 🚀 Overview
 
-- 🔍 اسکن پورت و سرویس‌ها
-- 🌐 بررسی دامنه و DNS (رکوردها، وضعیت پروکسی، ابر نارنجی)
-- 🛡️ بررسی امنیت و آسیب‌پذیری‌ها
-- 📊 گزارش کامل و دقیق
-- ⚙️ سازگاری کامل با تمام کانفیگ‌های Worker
+**Cloudflare IP & Domain Scanner** is a lightweight yet powerful reconnaissance tool designed for scanning **Cloudflare-protected domains and IP addresses**.
 
-و زیر همه‌ی این‌ها:
-🎯 تارگت‌گیری هوشمند · ☁️ تشخیص Cloudflare · 🔒 وضعیت SSL/TLS · 📍 موقعیت و ASN · 📄 خروجی تمیز و ساختاریافته
+Unlike traditional scanners, this project focuses specifically on Cloudflare environments, providing detailed information about:
 
-💡 برای استفاده‌ی روزمره، کافی است دامنه یا آی‌پی را بدهی تا اسکنر بقیه‌ی کار را انجام دهد.
+* Open ports
+* Running services
+* DNS records
+* SSL/TLS configuration
+* Cloudflare detection
+* Security information
+* Network details
 
+It is fully compatible with **Cloudflare Worker configurations** and delivers clean, structured reports for security analysis.
 
+> ⚡ Simply provide a target domain or IP address and let the scanner do the rest.
 
-پارامترهای کاربردی:
-پارامتر	توضیح :
--t / --target	دامنه یا آی‌پی هدف
--p / --ports	محدوده پورت (مثلاً 1-1000)
--f / --full	اسکن کامل + بررسی آسیب‌پذیری
--o / --output	ذخیره گزارش در فایل
--w / --worker	حالت مخصوص کانفیگ‌های ورکر
+---
 
+# ✨ Features
+
+* 🔍 Fast Port Scanning
+* 🌐 DNS & Domain Analysis
+* ☁️ Cloudflare Detection
+* 🔒 SSL / TLS Validation
+* 🛡️ Security Information
+* 📍 ASN & Geo Location Lookup
+* 📊 Clean JSON Reports
+* ⚙️ Full Cloudflare Worker Support
+* 🎯 Smart Target Detection
+
+---
+
+# 📦 Installation
+
+```bash
+git clone https://github.com/T3HSH/cloudflare-scanner.git
+
+cd cloudflare-scanner
+
+pip install -r requirements.txt
+```
+
+---
+
+# 🚀 Usage
+
+```bash
+python scanner.py -t example.com
+```
+
+### Full Scan
+
+```bash
+python scanner.py -t example.com --full
+```
+
+### Save Report
+
+```bash
+python scanner.py -t example.com -o report.json
+```
+
+### Worker Mode
+
+```bash
+python scanner.py -t worker.example.com --worker
+```
+
+---
+
+# ⚙️ Command Line Arguments
+
+| Parameter        | Description                               |
+| ---------------- | ----------------------------------------- |
+| `-t`, `--target` | Target domain or IP address               |
+| `-p`, `--ports`  | Port range (Example: `1-1000`)            |
+| `-f`, `--full`   | Full scan with additional security checks |
+| `-o`, `--output` | Save output to a file                     |
+| `-w`, `--worker` | Cloudflare Worker scanning mode           |
+
+---
+
+# 📋 Example Output
+
+```text
 🎯 TARGET LOCKED
-────────────────────────────
+────────────────────────────────────
+
 Domain        : example.com
 IP Address    : 185.199.108.153
 Cloudflare    : YES ☁️
@@ -42,13 +103,40 @@ SSL / TLS     : Valid
 Server        : cloudflare
 ASN           : AS13335 Cloudflare, Inc.
 Location      : Europe 🇩🇪 Germany
-────────────────────────────
-✅ گزارش کامل ذخیره شد → report.json
 
-📌 نکات مهم
-•	این ابزار مخصوص دامنه‌ها و آی‌پی‌های پشت Cloudflare بهینه شده است.
-•	حالت --worker برای تست و استخراج اطلاعات مرتبط با کانفیگ‌های ورکر طراحی شده.
-•	از اسکن دامنه‌ها و سرورهایی که مالک آن‌ها نیستید خودداری کنید.
-📜 مجوز تحت مجوز MIT — به فایل LICENSE مراجعه کنید.
-ساخته‌شده با ❤️ توسط T3HSH
+────────────────────────────────────
+✅ Report saved → report.json
+```
 
+---
+
+# 🎯 Designed For
+
+* Cloudflare Domains
+* Cloudflare Protected Servers
+* Cloudflare Workers
+* Security Reconnaissance
+* Network Analysis
+* Penetration Testing
+
+---
+
+# ⚠️ Disclaimer
+
+This project is intended **only for authorized security testing and educational purposes**.
+
+Only scan systems and domains that you own or have explicit permission to assess. The author is **not responsible for any misuse** of this software.
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for more information.
+
+---
+
+# ❤️ Author
+
+Developed with ❤️ by **T3HSH**
