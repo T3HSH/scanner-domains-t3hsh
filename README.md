@@ -1,3 +1,11 @@
+<p align="center">
+
+🌍 **Language**
+
+🇺🇸 **English** | <a href="./README_FA.md">🇮🇷 فارسی</a>
+
+</p>
+
 # 🛡️ Cloudflare IP & Domain Scanner
 
 **A powerful scanner for Cloudflare-protected domains and IP addresses, designed for reconnaissance, analysis, and Cloudflare Worker environments.**
