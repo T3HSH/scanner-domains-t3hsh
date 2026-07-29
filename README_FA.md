@@ -2,7 +2,7 @@
 
 🌍 **Language**
 
-🇺🇸 **English** | <a href="./README.md">Engilsh</a>
+🇺🇸 **فارسی** | <a href="./README.md">Engilsh</a>
 
 </p>
 
