@@ -1,3 +1,11 @@
+<p align="center">
+
+🌍 **Language**
+
+🇺🇸 **English** | <a href="./README.md">Engilsh</a>
+
+</p>
+
 # 🛡️ اسکنر آی‌پی و دامنه کلودفلر
 
 **یک ابزار قدرتمند برای اسکن دامنه‌ها و آی‌پی‌های پشت Cloudflare، مناسب برای شناسایی، تحلیل و بررسی پیکربندی‌های Cloudflare Worker.**
